@@ -24,8 +24,10 @@ def init():
     grass = Grass()
     game_world.add_object(grass, 0)
 
-    boy = Boy()
-    game_world.add_object(boy, 1)
+    for i in range(10):
+        boy = Boy()
+        Boy.setMoveX(boy,-100*i)
+        game_world.add_object(boy, 1)
 
 
 def finish():
